@@ -1,0 +1,18 @@
+<div class="game-dashboard">
+    <div class="game-dashboard__actions">
+        <div class="btns">
+            <div>
+                <button class="btns__item" (click)="playPiGame()">Play PI Game</button>
+            </div>
+            <div>
+                <button class="btns__item" (click)="playSnakeLadderGame()">Play Snakes & Ladders</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showPiGame">
+    <pi-game-widget></pi-game-widget>
+</div>
+<div *ngIf="showSnakeLadderGame">
+    <snake-ladder-widget></snake-ladder-widget>
+</div>

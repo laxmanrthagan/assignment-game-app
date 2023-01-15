@@ -1,0 +1,35 @@
+@import './../../styles.scss';
+
+.game-dashboard {
+    display: flex;
+    background-image: url('/./assets/game-dashboard.png');
+    background-repeat: no-repeat;
+    height: 87vh;
+    width: 100%;
+    display: table;
+    text-align: center;
+    background-size: 1500px 865px;
+
+
+    &__actions {
+        display: table-cell;
+        vertical-align: bottom;
+
+        .btns {
+            display: flex;
+            justify-content: center;
+
+            &__item {
+                width: 260px;
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+        }
+
+    }
+}
